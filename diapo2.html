@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple - Fouille</title>
+    <style>
+        body {
+            background: url('image2.png') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .manuscrit {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            width: 100px; /* Ajuste la taille */
+        }
+    </style>
+</head>
+<body>
+    <h2>Vous explorez le temple... Trouvez quelque chose d'utile.</h2>
+    <img src="manuscrit.png" class="manuscrit" alt="Manuscrit" onclick="trouverManuscrit()">
+
+    <script>
+        function trouverManuscrit() {
+            alert("Vous avez trouvé un manuscrit !");
+            window.location.href = 'diapo3.html';
+        }
+    </script>
+</body>
+</html>
